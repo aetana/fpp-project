@@ -1,0 +1,69 @@
+package day1.prog1;
+
+import static org.junit.Assert.*;
+//import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ArraySearchTest {
+
+	@Test
+	void firstElement() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 4};
+		int target = 5;
+		int result = ArraySearch.search(testArray, target);
+		int expected = 0;
+		assertTrue(expected == result);
+	}
+	
+	@Test
+	void lastElement() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 4};
+		int target = 5;
+		int result = ArraySearch.search(testArray, target);
+		int expected = testArray.length - 1;
+		assertTrue(expected == result);
+	}
+	
+	@Test
+	void middelElement() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 4};
+		int target = 10;
+		int result = ArraySearch.search(testArray, target);
+		int expected1 = testArray.length/2;
+		int expected2 = testArray.length/2 + 1;
+		assertTrue(expected1 == result || expected2 == result);
+	}
+	
+	@Test
+	void noElement() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 4};
+		int target = 11;
+		int result = ArraySearch.search(testArray, target);
+		int expected = -1;
+		assertTrue(expected == result);
+	}
+	
+	@Test
+	void more1Element() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 4};
+		int target = 2;
+		int result = ArraySearch.search(testArray, target);
+		int expected = -1;
+		assertTrue(expected == result);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

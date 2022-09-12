@@ -1,0 +1,15 @@
+package day2.prog8;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Prog2_8Test {
+
+	@Test
+	void testMin() {
+		
+		fail("Not yet implemented");
+	}
+
+}

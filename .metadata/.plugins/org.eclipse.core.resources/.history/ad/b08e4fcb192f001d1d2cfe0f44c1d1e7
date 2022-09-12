@@ -1,0 +1,23 @@
+package day2.prog6;
+
+public class Prog6 {
+	public static void main(String args []) {
+		String arr[] = {"horse", "dog", "cat", "horse","dog"};
+		removeDups(arr);
+	}
+	public static String[] removeDups(String[] arrayS) {
+		// TODO Auto-generated method stub
+		int dupsCount = 0;
+		for(int i = 0; i < arrayS.length - 1; i++) {
+			for(int j = i + 1; j < arrayS.length; j++) {
+				if(arrayS[i].equals(arrayS[j])) dupsCount++;
+			}
+		}
+		int size = arrayS.length - dupsCount;
+		System.out.println("Dobs Count = " + dupsCount);
+		String newArrayS[] = new String[size];
+		return newArrayS;
+
+	}
+
+}

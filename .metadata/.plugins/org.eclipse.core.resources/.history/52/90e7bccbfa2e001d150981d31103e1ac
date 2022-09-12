@@ -1,0 +1,18 @@
+package day2.prog4;
+
+public class Prog4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//row separated by ":"
+		//column entries are separated by “,”.
+		//the first column is always productId
+		
+		String myString = Data.records;
+		
+		System.out.println(myString);
+		
+	}
+	
+}

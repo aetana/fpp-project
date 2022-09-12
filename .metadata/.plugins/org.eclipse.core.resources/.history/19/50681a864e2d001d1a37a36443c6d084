@@ -1,0 +1,25 @@
+package day1.prog1;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import lesson1.exercise_1.MyClass;
+
+class ArraySearchTest {
+
+	@Test
+	void firstElement() {
+		
+		int[] testArray = {5, 2, 9, 10, 7, 3, 2, 5};
+		int target = 5;
+		
+		int result = ArraySearch.search(testArray, target);
+		int expected = 0;
+		assertTrue(expected == result);
+	}
+	
+	
+
+}

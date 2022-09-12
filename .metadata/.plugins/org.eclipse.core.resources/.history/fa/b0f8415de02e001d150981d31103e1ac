@@ -1,0 +1,57 @@
+package day2.prog1;
+
+/**
+ * @author Amanuel Etana 
+ * Sep 2022
+ * 
+ *
+ */
+public class Customer {
+	
+	private String firstName;
+	private String lastName;
+	private String socSecurityNum;
+	private Address billingAddress;
+	private Address shippingAddress;
+	
+	public Customer(String fName, String lName, String sSNum) {
+		firstName = fName;
+		lastName = lName;
+		socSecurityNum = sSNum;
+	}
+	
+	public Customer() { //default constructor
+	}
+	
+	/** Provides a string representation of this Employee */
+	public String toString() {
+		return "[" + firstName + " " + lastName + " " + socSecurityNum + "]";
+	}
+	
+	
+	public Address getHome() {
+		return billingAddress;
+	}
+	public void setHome(Address home) {
+		this.billingAddress = home;
+	}
+	public Address getWork() {
+		return shippingAddress;
+	}
+	public void setWork(Address work) {
+		this.shippingAddress = work;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public String getSocSecurityNum() {
+		return socSecurityNum;
+	}
+	public void setSocSecurityNum(String socSecurityNum) {
+		this.socSecurityNum = socSecurityNum;
+	}
+	
+}

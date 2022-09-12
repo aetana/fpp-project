@@ -1,0 +1,26 @@
+package day2.prog1;
+
+/**
+ * @author Amanuel Etana 
+ * Sep 2022
+ * 
+ *
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Address add1A = new Address("10 Adams", "Fairfield", "IA", "52556");
+		Address add1B = new Address("110 Burlington", "Fairfield", "IA", "52556");
+		Address add2A = new Address("3018 W North Ave", "Chicago", "IL", "60647");
+		Address add2B = new Address("298 N Orchard Dr", "Chicago", "IL", "60440"); 
+		
+		Customer cust1 = new Customer("Amanuel", "Etana", "123-456-7890");
+		
+		
+		System.out.println(cust1.toString());
+		
+		
+		
+	}
+
+}

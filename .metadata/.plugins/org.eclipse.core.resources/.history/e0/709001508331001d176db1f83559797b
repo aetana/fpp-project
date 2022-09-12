@@ -1,0 +1,15 @@
+package lab3.prog4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle ci = new Circle(5);
+		Rectangle re = new Rectangle(3, 2);
+		Triangle tr = new Triangle(8, 2);
+		System.out.println("Area of Circle is "+ String.format("%.2f",ci.computeArea()));
+		System.out.println("Area of Rectangle is "+ re.computeArea());
+		System.out.println("Area of Triangle is "+ tr.computeArea());
+	}
+
+}
