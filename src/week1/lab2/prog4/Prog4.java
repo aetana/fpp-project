@@ -1,0 +1,28 @@
+package week1.lab2.prog4;
+
+
+public class Prog4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//row separated by ":"
+		//column entries are separated by “,”.
+		//the first column is always productId
+		
+		String myString = Data.records;
+		
+		String rowString[] = myString.split(":");
+		
+		for(String x: rowString) {
+			System.out.println((x.split(",")[0]));
+			//System.out.println(x.substring(0,4));
+		}
+		
+		//System.out.println(myString);
+		
+		//System.out.println(myString);
+		
+	}
+	
+}

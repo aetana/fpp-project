@@ -1,0 +1,22 @@
+package week1.lab2.prog6;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Arrays;
+
+import org.junit.jupiter.api.Test;
+
+class TestProg6 {
+
+	static private String testArray[] = {"horse", "dog", "cat", "horse","dog"};
+	@Test
+	void testRemoveDups() {
+		
+		String result[] = Prog6.removeDups(testArray);
+		String expected[] = new String []{"horse", "dog", "cat"};
+		assertArrayEquals(result, expected);
+		assertTrue(Arrays.equals(result,expected));
+		
+	}
+
+}
