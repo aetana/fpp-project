@@ -6,7 +6,7 @@ public class Rectangle extends ClosedCurve{
 	
 	public Rectangle(double width, double length){
 		this.width = width;
-		this.length = length;
+		this.length = length; 
 	}
 	
 	public double computeArea() {

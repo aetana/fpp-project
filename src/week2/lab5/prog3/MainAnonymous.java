@@ -1,4 +1,4 @@
-package week2.lap5.prog3;
+package week2.lab5.prog3;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -1,6 +1,6 @@
 package week1.lab4.prog2.closedcurve.good;
 
-public class Test {
+public class Test { 
 	
 	public static void main(String[] args) {
 

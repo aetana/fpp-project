@@ -10,7 +10,7 @@ public final class Triangle extends ClosedCurve {
 	@SuppressWarnings("unused")
 	/** sides of the triangle, defined so that side1 <= side2 <= side3 */
 	private final double side1, side2, side3;
-	private static final double DEFAULT_SIDE = 5.0;
+	private static final double DEFAULT_SIDE = 5.0; 
 	
 	/**
 	 * This constructor accepts base and height of triangle and 
