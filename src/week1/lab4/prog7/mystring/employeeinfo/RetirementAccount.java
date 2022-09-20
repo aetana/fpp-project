@@ -1,4 +1,4 @@
-package week1.lab4.prog7.employeeinfo;
+package week1.lab4.prog7.mystring.employeeinfo;
 
 public class RetirementAccount extends Account {
 	private final double PENALTY_PERCENT = 2.0;

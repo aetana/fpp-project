@@ -1,6 +1,5 @@
 package week2.lab7.prog2.minsort;
 
-import java.util.Arrays;
 
 public class MinSort {
 

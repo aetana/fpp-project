@@ -1,4 +1,4 @@
-package week1.lab4.prog7.employeeinfo;
+package week1.lab4.prog7.mystring.employeeinfo;
 
 abstract public class Account implements Comparable<Account> {
 	private Employee emp;

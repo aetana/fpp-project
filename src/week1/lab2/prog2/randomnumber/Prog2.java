@@ -1,4 +1,4 @@
-package week1.lab2.prog2;
+package week1.lab2.prog2.randomnumber;
 
 
 public class Prog2 {

@@ -1,4 +1,4 @@
-package week2.lab5.prog2;
+package week2.lab5.prog2.top;
 
 public class Top {
 	int t = 1;

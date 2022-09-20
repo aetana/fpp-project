@@ -1,4 +1,4 @@
-package week1.lab4.prog7.employeeinfo;
+package week1.lab4.prog7.mystring.employeeinfo;
 
 public class AccountList {
 	private final int INITIAL_LENGTH = 4;

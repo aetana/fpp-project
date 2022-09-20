@@ -1,4 +1,4 @@
-package week2.lab5.prog1;
+package week2.lab5.prog1.singleton;
 
 
 public class MySingleton {

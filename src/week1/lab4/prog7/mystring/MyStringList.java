@@ -1,4 +1,4 @@
-package week1.lab4.prog7;
+package week1.lab4.prog7.mystring;
 
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;

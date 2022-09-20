@@ -1,9 +1,9 @@
-package week1.lab4.prog7.employeeinfo;
+package week1.lab4.prog7.mystring.employeeinfo;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import week1.lab4.prog7.MyStringList;
+import week1.lab4.prog7.mystring.MyStringList;
 
 public class Employee { //implements Comparable<Employee> {
 	private AccountList accounts; 

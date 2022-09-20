@@ -1,7 +1,7 @@
-package week1.lab4.prog7;
+package week1.lab4.prog7.mystring;
 import java.util.Arrays;
 
-import week1.lab4.prog7.employeeinfo.Employee;
+import week1.lab4.prog7.mystring.employeeinfo.Employee;
 
 
 public class Main {

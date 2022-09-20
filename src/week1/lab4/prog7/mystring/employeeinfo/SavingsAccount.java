@@ -1,4 +1,4 @@
-package week1.lab4.prog7.employeeinfo;
+package week1.lab4.prog7.mystring.employeeinfo;
 
 public class SavingsAccount extends Account {
 	private final double MONTHLY_INTEREST_RATE = 0.25;

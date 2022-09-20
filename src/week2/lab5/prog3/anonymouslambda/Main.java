@@ -1,4 +1,4 @@
-package week2.lab5.prog3;
+package week2.lab5.prog3.anonymouslambda;
 
 import java.util.Arrays;
 
