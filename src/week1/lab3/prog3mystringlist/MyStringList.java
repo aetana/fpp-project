@@ -1,4 +1,4 @@
-package week1.lab3.prog3;
+package week1.lab3.prog3mystringlist;
 
 import java.util.Arrays;
 
