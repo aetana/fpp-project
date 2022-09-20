@@ -1,4 +1,4 @@
-package week2.lab8.prog1.minsort;
+package week2.lab8.prog1.minsort_stringlist;
 
 /**
  * Performs binary search on a sorted array using
