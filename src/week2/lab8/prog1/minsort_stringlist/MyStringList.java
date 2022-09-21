@@ -13,15 +13,34 @@ public class MyStringList {
 	/******* sorting methods ********/
 	public void minSort(){
 		//implement
+		if(strArray == null || strArray.length <=1) return;
+		int len = size;
+		//int temp = 0;
+		for(int i = 0; i < len; ++i){
+			int nextMinPos = minpos(i,len-1);
+			swap(i,nextMinPos); 
+		}
 	}
 	void swap(int i, int j){
 		//implement
+		String temp = strArray[i];
+		strArray[i] = strArray[j];
+		strArray[j] = temp;
 		
 	}
 	//find minimum of arr between the indices bottom and top
 	public int minpos(int bottom, int top){		
 		//implement
-		return -1;
+		String m = strArray[bottom];
+		int index = bottom;
+		for(int i = bottom+1; i <= top; ++i){
+			if(strArray[i].compareTo(m) < 0){ 
+				m = strArray[i];
+				index = i;
+			}
+		}
+		//return location of min, not the min itself
+		return index;
 	}
 
 	/********* end sorting methods ********/
@@ -31,7 +50,20 @@ public class MyStringList {
 	//search a sorted array
 	boolean binSearchIt(String val) {
 	    //implement
-		return false;
+		if(strArray == null || strArray.length == 0) return false;
+		int lower = 0;
+		int upper = size() -1;
+		while(true) {
+			if(lower > upper) return false;
+			int mid = (lower + upper)/2;
+			if(val == strArray[mid]) return true;
+			if(val.compareTo(strArray[mid]) < 0) { //search left
+				upper = mid - 1; //lower is not changed
+			} else {   //x > arr[mid], search right
+				lower = mid + 1;  //upper is not changed
+			}
+		}
+
 	}
 
 	/********* end binary search methods *****/
@@ -120,7 +152,7 @@ public class MyStringList {
 		System.out.println(list.toString());
 		System.out.println();
 		System.out.println("\"number\" is in the list? "+list.binSearchIt("number"));
-		System.out.println("\"tiny\" is in the list? "+list.binSearchIt("tiny"));
+		System.out.println("\"tiny\" is in the list? "+list.binSearchIt("vast"));
 	}
 
 }
