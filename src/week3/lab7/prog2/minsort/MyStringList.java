@@ -1,4 +1,4 @@
-package week2.lab7.prog2.minsort;
+package week3.lab7.prog2.minsort;
 
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;

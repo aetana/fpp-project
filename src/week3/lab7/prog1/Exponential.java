@@ -1,4 +1,4 @@
-package week2.lab7.prog1;
+package week3.lab7.prog1;
 
 public class Exponential {
 	
