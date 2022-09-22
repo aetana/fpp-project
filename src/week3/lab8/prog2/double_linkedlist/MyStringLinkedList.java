@@ -70,6 +70,7 @@ public class MyStringLinkedList {
 		while(current.next != null) {
 			nextMinNode = minNode(current.next);
 			swap(current.next, nextMinNode);
+			current = current.next;
 		}
 	}
 	void swap(Node n1, Node n2) {
@@ -83,20 +84,16 @@ public class MyStringLinkedList {
 	public Node minNode(Node n) {
 		//implement
 		Node current = n;
+		Node returnedNode = current;
+		
 		while(current != null) {
-			
+			if(current.value.compareTo(returnedNode.value) < 0) {
+				returnedNode = current;
+			}
 			current = current.next;
 		}
-		String m = strArray[bottom];
-		int index = bottom;
-		for(int i = bottom+1; i <= top; ++i){
-			if(strArray[i].compareTo(m) < 0){ 
-				m = strArray[i];
-				index = i;
-			}
-		}
 		//return location of min, not the min itself
-		return index;
+		return returnedNode;
 	}
 
 	/********* end sorting methods ********/
@@ -216,13 +213,16 @@ public class MyStringLinkedList {
 		System.out.println(list);
 		list.insert("Roro", 2);
 		System.out.println(list);
-		list.insert("Etana", 5);
+		list.insert("Abebe", 0);
+		list.insert("Zewdu", 0);
 		System.out.println(list);
-		list.remove("Etana");
+		list.minSort();
 		System.out.println(list);
-		list.remove("Etana");
+		list.insert("Amanuel", 3);
 		System.out.println(list);
-		list.remove("Roro");
+		list.minSort();
 		System.out.println(list);
+		
+
 	}
 }
