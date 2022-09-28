@@ -1,4 +1,4 @@
-package week4.lab12.closedcurve.good;
+package week4.lab12.prog1closedcurve.good;
 
 public class Test {
 
@@ -20,7 +20,7 @@ public class Test {
 									
 					}
 		}catch(IllegalTriangleException e) {
-			System.out.println(e.getMessage());
+			System.out.println(e.getClass().getPackageName() +  e.getMessage());
 		}catch(IllegalClosedCurveException e) {
 			System.out.println(e.getMessage());
 		}

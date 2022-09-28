@@ -1,4 +1,4 @@
-package week4.lab12.closedcurve.good;
+package week4.lab12.prog1closedcurve.good;
 
 import java.util.logging.Logger;
 
