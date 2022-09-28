@@ -18,12 +18,11 @@ abstract public class Account {
 	void makeDeposit(double amount){
 		balance += amount;
 	}
-	boolean makeWithdrawal(double amount){
+	void makeWithdrawal (double amount)throws OverdrawnAccountException{
 		if(amount > balance){
-			return false;
+			throw new OverdrawnAccountException("Withdrawal amount exceeds balance! ");
 		}
 		balance -= amount;
-		return true;
 	}
 	double getBalance(){
 		return balance;

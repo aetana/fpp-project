@@ -2,7 +2,9 @@ package week4.lab12.prog2;
 
 import java.util.Scanner;
 
-import lesson12.lab12_2.employeeinfo.Employee;
+import week4.lab12.prog2.employeeinfo.Employee;
+import week4.lab12.prog2.employeeinfo.OverdrawnAccountException;
+import week4.lab12.prog2.MyStringList;
 
 
 
@@ -114,17 +116,18 @@ public class Main {
 		
 		double amount = sc.nextDouble();
 		System.out.println();
-		boolean ok=e.withdraw(accountIndex, amount);
-		System.out.println();
-		if(ok){
+		try {
+			e.withdraw(accountIndex, amount);
+					
+			System.out.println();
 			System.out.println("$"+amount+
 				" has been withdrawn from the "+n+name+" account of "+ emps[empChoice].getName());
-		}
-		else {
+		}catch(OverdrawnAccountException exc) {
+			System.out.println(exc.getMessage());
+			System.out.println();
 			System.out.println("Amount $"+amount+" exceeds the current balance of the "+n+name+
 					" account of "+emps[empChoice].getName());
 		}
-		
 		
 	}	
 	

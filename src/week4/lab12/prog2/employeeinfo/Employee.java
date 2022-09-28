@@ -3,7 +3,7 @@ package week4.lab12.prog2.employeeinfo;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import lesson12.lab12_2.MyStringList;
+import week4.lab12.prog2.MyStringList;
 
 
 
@@ -44,9 +44,9 @@ public class Employee {
 		Account selected = accounts.get(acctIndex);
 		selected.makeDeposit(amt);
 	}
-	public boolean withdraw(int acctIndex, double amt){
+	public void withdraw (int acctIndex, double amt) throws OverdrawnAccountException{
 		Account selected = accounts.get(acctIndex);
-		return selected.makeWithdrawal(amt);
+		selected.makeWithdrawal(amt);
 	}	
 	
 
